@@ -40,3 +40,74 @@ ví dụ:
 
 
 
+# Câu A5
+Dùng cách một là chỉ để trang trí, icon, logo, hoặc ảnh minh hoạ mà không cần chú thích
+<img src="product.jpg" alt="iPhone">
+
+Dùng cách 2 có <firgure> + <figcaption> dùng ghi chú cho ảnh , giúp cho screen reader dễ dàng nhận diện hơn, tốt cho SEO
+<figure>
+    <img src="iphone16-pro-max.jpg" alt="iPhone 16 Pro Max 256GB màu Titan">
+    <figcaption>iPhone 16 Pro Max 256GB — Giá chỉ từ 25.990.000đ</figcaption>
+</figure>
+
+# Phần C
+# Câu C1 
+Lỗi 1: Dòng 2 — Text "Tên:" không có <label for="...">, input không có id/name/required
+Sửa: <label for="name">Tên:</label>
+     <input type="text" id="name" name="name" required placeholder="Nguyễn Văn A">
+
+Lỗi 2: Dòng 4 — Input email không có <label>, id, name, required
+Sửa: <label for="email">Email:</label>
+     <input type="email" id="email" name="email" required placeholder="Email của bạn">
+
+Lỗi 3: Dòng 6 — Input password không có <label>, id, name, required
+Sửa: <label for="password">Mật khẩu:</label>
+     <input type="password" id="password" name="password" required placeholder="Mật khẩu">
+
+Lỗi 4: Dòng 7 — Input confirm password không có <label>, id, name
+Sửa: <label for="confirm">Nhập lại mật khẩu:</label>
+     <input type="password" id="confirm" name="confirm" required placeholder="Nhập lại mật khẩu">
+
+Lỗi 5: Dòng 9 — Phone dùng type="text" thay vì type="tel", không có <label>, name
+Sửa: <label for="phone">Số điện thoại:</label>
+     <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="0901234567">
+
+Lỗi 6: Dòng 11 — <select> không có <label>, id, name
+Sửa: <label for="city">Thành phố:</label>
+     <select id="city" name="city"> ... </select>
+
+Lỗi 7: Dòng 14 — <label> checkbox không chứa <input type="checkbox"> bên trong
+Sửa: <label>
+         <input type="checkbox" name="agree" required>
+         Tôi đồng ý điều khoản
+     </label>
+
+Lỗi 8: Dòng 1 — <form> không có action và method
+Sửa: <form action="#" method="POST">
+# Câu C2:
+1. Pattern CCCD    : [0-9]{12}
+   Pattern tài khoản : [0-9]{10,15}
+
+2. HTML5 validation KHÔNG đủ an toàn vì :
+   - Có thể bypass bằng DevTools, Postman, curl
+   - Chỉ chạy trên browser, không bảo vệ server
+   - Backend LUÔN phải validate lại
+
+3. 3 việc HTML5 không làm được :
+   - So sánh 2 field (confirm PIN)
+   - Kiểm tra dữ liệu đã tồn tại (gọi API)
+   - Validate nghiệp vụ phức tạp (checksum CCCD)
+
+4. 2 rủi ro bảo mật :
+   - SQL Injection nếu không sanitize input ở backend
+   - Dữ liệu rác làm hỏng hệ thống nếu không validate backend
+
+# phần D:
+Link video:https://drive.google.com/file/d/1f0Hl3cro3lqToU22RXG16kwTOWP0GWye/view?usp=sharing
+
+
+
+
+
+
+

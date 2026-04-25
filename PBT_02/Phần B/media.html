@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone 16 Pro Max - Sản Phẩm Chính Thức</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1, h2 { text-align: center; }
+        figure {
+            margin: 20px 0;
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        figcaption {
+            font-style: italic;
+            margin-top: 8px;
+            color: #555;
+        }
+        video, audio {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+            display: block;
+        }
+        .container { margin-bottom: 40px; }
+    </style>
+</head>
+<body>
+    <h1>iPhone 16 Pro Max 256GB - Titan</h1>
+    <p style="text-align: center; font-size: 1.2em;">Trải nghiệm sản phẩm với đa phương tiện</p>
+
+    <!-- Phần 1: 3 ảnh sản phẩm dùng <figure> + loading="lazy" -->
+    <div class="container">
+        <h2>Hình ảnh sản phẩm</h2>
+
+        <figure>
+            <img src="https://picsum.photos/id/1015/800/600"
+                 alt="iPhone 16 Pro Max màu Titan góc nghiêng nổi bật thiết kế camera"
+                 loading="lazy">
+            <figcaption>iPhone 16 Pro Max — Thiết kế Titan cao cấp</figcaption>
+        </figure>
+
+        <figure>
+            <img src="https://picsum.photos/id/201/800/600"
+                 alt="Màn hình Super Retina XDR của iPhone 16 Pro Max hiển thị giao diện mượt mà"
+                 loading="lazy">
+            <figcaption>Màn hình 6.9 inch Super Retina XDR — Độ sáng vượt trội</figcaption>
+        </figure>
+
+        <figure>
+            <img src="https://picsum.photos/id/237/800/600"
+                 alt="Hệ thống camera 48MP của iPhone 16 Pro Max chụp ảnh chi tiết"
+                 loading="lazy">
+            <figcaption>Camera chính 48MP — Chất lượng hình ảnh chuyên nghiệp</figcaption>
+        </figure>
+    </div>
+
+    <!-- Phần 2: Video nhúng YouTube -->
+    <div class="container">
+        <h2>Video giới thiệu sản phẩm</h2>
+        <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/vMWm9MUSQqo?si=b9_QS5ytCzDBlorC"
+                title="YouTube video player"
+                style="border: none;"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe>
+    </div>
+
+    <!-- Phần 3: Thẻ <video> tự host với 2 source -->
+    <div class="container">
+        <h2>Video demo camera (tự host)</h2>
+        <video controls poster="https://picsum.photos/id/1015/800/450" style="width: 100%;">
+            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny_720_10s_1MB.mp4" type="video/mp4">
+            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny_720_10s_1MB.webm" type="video/webm">
+            Trình duyệt của bạn không hỗ trợ thẻ video.
+        </video>
+        <p><small>Video demo chất lượng camera (Big Buck Bunny - mẫu công khai)</small></p>
+    </div>
+
+    <!-- Phần 4: Thẻ <audio> nhạc nền -->
+    <div class="container">
+        <h2>Nhạc nền giới thiệu sản phẩm</h2>
+        <audio controls>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+            Trình duyệt của bạn không hỗ trợ thẻ audio.
+        </audio>
+    </div>
+
+    <!-- Phần 5: SVG inline -->
+    <div class="container" style="text-align: center;">
+        <h2>Logo Apple (SVG inline)</h2>
+        <svg width="150" height="150" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="100" cy="100" r="90" fill="#000" />
+            <text x="100" y="115" font-family="Arial" font-size="80" fill="#fff"
+                  text-anchor="middle" dominant-baseline="middle">A</text>
+        </svg>
+        <p><strong>Apple Inc.</strong></p>
+    </div>
+
+    <footer style="text-align: center; margin-top: 50px; color: #777;">
+        <p>Trang demo HTML5 Multimedia — Bài tập PBT02</p>
+    </footer>
+</body>
+</html>

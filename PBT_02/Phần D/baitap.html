@@ -1,0 +1,32 @@
+<!-- 🎤 <fieldset>+ <legend>dùng để làm gì? Tại sao quan trọng cho khả năng tiếp cận?
+🎤 <label for="email">— tại sao phải có for? Demo: nhấp vào nhãn → tập trung vào đầu vào
+🎤 type="email"tự động xác thực như thế nào? Demo: nhập "abc" rồi gửi
+🎤regex pattern: giải thích từng phần(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}
+🎤 Demo: thử gửi với mật khẩu yếu → hiển thị thông báo xác thực
+🎤 requiredvs không bắt buộc — sự khác biệt khi gửi -->
+
+email, password, sdt, ngaysinh
+
+<form action="#" method="">
+    <fieldset>
+        <legend>Thong tin tai khoan</legend>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required
+        placeholder="you@email.com">
+
+        <label for="pass">Mat Khau</label>
+        <input type="password" name="pass" id="pass" required
+        minlength="8"
+        pattern="(?=.*\)(?=.[a-z])(?=.[A-Z])">
+        <title>it nhat 1 chu so, co chu cai thuong vaf chu cai in hoa</title>
+
+        <label for="phone">So dien thoai</label>
+        <input type="tel" name="phone" id="phone" required
+        pattern="[0,9]{10}" placeholder="0987676670">
+
+        <label for="dob">Ngay sinh</label>
+        <input type="date" name="dob" id="dob">
+    </fieldset>
+    <input type="checkbox"  id="agree">
+</form>
