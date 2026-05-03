@@ -1,0 +1,21 @@
+#thấp->cao
+
+p { color: black; }                                      /* (0,0,1) */
+
+.text { color: blue; }                                   /* (0,1,0) */
+
+.highlight { color: green; }                             /* (0,1,0) */
+
+.demo-area p { color: purple; }                          /* (0,1,1) */
+
+p.text { color: orange; }                                /* (0,1,1) */
+
+p.highlight { color: pink; }                             /* (0,1,1) */
+
+.text.highlight { color: brown; }                        /* (0,2,0) */
+
+#demo { color: red; }                                    /* (1,0,0) */
+
+p#demo.text { color: teal; }                             /* (1,1,1) */
+
+p#demo.text.highlight { color: gold; }                   /* (1,2,1) - Thắng */

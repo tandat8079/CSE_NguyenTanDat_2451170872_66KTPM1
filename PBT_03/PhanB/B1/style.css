@@ -1,0 +1,107 @@
+/* Dòng đầu tiên bắt buộc */
+* {
+    box-sizing: border-box;
+}
+
+/* Typography cơ bản cho Body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+    color: white;
+    padding: 25px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+nav a:hover {
+    color: #ffd700;
+    text-decoration: underline;
+}
+
+nav a.active {
+    color: #ffd700;
+    font-weight: bold;
+    border-bottom: 3px solid #ffd700;
+}
+
+/* Table Kỹ năng */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #2c3e50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #e0f0ff;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: #ddd;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+# Bai B1 — Style trang Profile
+
+- Đã sử dụng external CSS (`style.css`)
+- Dòng đầu tiên: `* { box-sizing: border-box; }` ✓
+- Sử dụng ít nhất 5 loại selector:
+  1. Element selector (`body`, `header`, `table`, `th`, `footer`)
+  2. Class selector (`.active`)
+  3. Descendant selector (`header h1`, `nav a`)
+  4. Pseudo-class (`:hover`, `:nth-child(even)`)
+  5. Universal selector (`*`)
+
+Các tính năng đã thực hiện:
+- Header gradient + màu trắng
+- Navigation: hover đổi màu + gạch chân, active có border
+- Table: border-collapse, zebra striping, row hover
+- Footer: background đậm, text center

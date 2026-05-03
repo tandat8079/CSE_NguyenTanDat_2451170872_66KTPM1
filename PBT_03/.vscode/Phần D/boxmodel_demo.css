@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    background: white;
+}
+
+.box {
+    width: 300px;
+    padding: 20px;
+    border: 5px solid;
+    margin-bottom: 20px;
+    background: white;
+}
+
+.content-box{
+    box-sizing: content-box;
+    border-color: red;
+}
+
+.border-box{
+    box-sizing: border-box;
+    border-color: blue;
+}
+
+
+.margin-a{
+    background: pink;
+    color: aqua;
+    padding: 15px;
+    margin-bottom: 25px;
+}
+
+.margin-b{
+    background: beige;
+    color: chartreuse;
+    padding: 15px;
+    margin-top: 40px;
+}

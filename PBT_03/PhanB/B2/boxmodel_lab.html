@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B2 - Box Model Lab</title>
+    <link rel="stylesheet" href="boxmodel.css">
+</head>
+<body>
+    <h1>Box Model Laboratory</h1>
+
+    <h2>Phần 1: So sánh content-box vs border-box</h2>
+    <div class="container">
+        <!-- Hộp 1: content-box -->
+        <div class="box content-box">
+            <strong>Hộp 1</strong><br>
+            content-box<br>
+            width: 300px
+        </div>
+
+        <!-- Hộp 2: border-box -->
+        <div class="box border-box">
+            <strong>Hộp 2</strong><br>
+            border-box<br>
+            width: 300px
+        </div>
+    </div>
+
+    <h2>Phần 2: Layout 3 cột</h2>
+    <div class="three-columns">
+        <!-- Cột trái -->
+        <div class="column sidebar">
+            <strong>Sidebar</strong><br>
+            250px + padding
+        </div>
+        
+        <!-- Cột giữa -->
+        <div class="column content">
+            <strong>Content</strong><br>
+            500px + padding
+        </div>
+        
+        <!-- Cột phải -->
+        <div class="column ads">
+            <strong>Ads</strong><br>
+            250px + padding
+        </div>
+    </div>
+
+    <p style="margin-top: 40px; color: #666;">
+        Mở DevTools (F12) → Chọn từng box → Tab <strong>Computed</strong> để xem Box Model diagram.
+    </p>
+</body>
+</html>
