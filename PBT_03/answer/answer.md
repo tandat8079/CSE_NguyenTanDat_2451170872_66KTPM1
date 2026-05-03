@@ -259,4 +259,6 @@ Phân tích:
     color: green
     Lý do: .highlight { color: green !important; } — !important thắng tất cả.
 
+# Phan D
+link video: https://drive.google.com/file/d/1CZJ_dNsFPyhh-dCyDX4B36Ws9QjVV8Cx/view?usp=sharing
 
