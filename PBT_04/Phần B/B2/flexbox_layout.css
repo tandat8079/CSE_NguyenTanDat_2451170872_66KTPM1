@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f8fafc;
+    line-height: 1.6;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    background: #1e2937;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.nav-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #22d3ee;
+}
+
+/* Menu */
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s;
+    position: relative;
+}
+
+.menu a:hover {
+    color: #22d3ee;
+}
+
+.menu a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #22d3ee;
+    transition: width 0.3s;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+/* Right side */
+.nav-right {
+    display: flex;
+    gap: 12px;
+}
+
+.btn-login, .btn-register {
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-login {
+    background: transparent;
+    border: 2px solid #22d3ee;
+    color: #22d3ee;
+}
+
+.btn-login:hover {
+    background: #22d3ee;
+    color: #1e2937;
+}
+
+.btn-register {
+    background: #22d3ee;
+    border: none;
+    color: #1e2937;
+}
+
+.btn-register:hover {
+    background: #67e8f9;
+    transform: translateY(-2px);
+}
+
+/* ================= PRODUCT CARDS ================= */
+.main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+    color: #1e2937;
+}
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-card {
+    flex: 0 0 calc(25% - 20px);   /* 4 cột */
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+    flex: 1;
+}
+
+.card-content h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #1e2937;
+}
+
+.price {
+    color: #ef4444;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+/* Nút luôn dính đáy card */
+.buy-btn {
+    margin-top: auto;
+    width: 100%;
+    padding: 14px;
+    background: #1e2937;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.buy-btn:hover {
+    background: #22d3ee;
+    color: #1e2937;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .product-card {
+        flex: 0 0 calc(33.33% - 20px); /* 3 cột */
+    }
+}
+
+@media (max-width: 768px) {
+    .product-card {
+        flex: 0 0 calc(50% - 20px);   /* 2 cột */
+    }
+    
+    .menu {
+        gap: 15px;
+        font-size: 15px;
+    }
+}

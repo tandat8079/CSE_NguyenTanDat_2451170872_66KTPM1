@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B3 - Grid E-Commerce Layout</title>
+    <link rel="stylesheet" href="grid.css">
+</head>
+<body>
+    <div class="grid-container">
+
+        <!-- HEADER -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">🛒 SHOPVN</div>
+                <nav>
+                    <a href="#">Trang chủ</a>
+                    <a href="#">Sản phẩm</a>
+                    <a href="#">Khuyến mãi</a>
+                    <a href="#">Liên hệ</a>
+                </nav>
+                <div class="header-right">
+                    <button>🛍️ Giỏ hàng (3)</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- HERO BANNER -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Siêu Sale 50% - Chỉ Có Tại SHOPVN</h1>
+                <p>Điện thoại, laptop, phụ kiện chính hãng giá sốc nhất năm 2026</p>
+                <button class="hero-btn">Mua Ngay</button>
+            </div>
+            <!-- Featured Product -->
+            <div class="featured-card">
+                <div class="badge">BEST SELLER</div>
+                <img src="https://picsum.photos/600/400?random=10" alt="iPhone 16 Pro Max">
+                <div class="featured-info">
+                    <h3>iPhone 16 Pro Max</h3>
+                    <p class="price">34.990.000 ₫</p>
+                    <button>Mua ngay</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- MAIN LAYOUT -->
+        <div class="main-layout">
+            <!-- SIDEBAR -->
+            <aside class="sidebar">
+                <h3>Bộ lọc sản phẩm</h3>
+                <div class="filter-group">
+                    <h4>Thương hiệu</h4>
+                    <label><input type="checkbox" checked> Apple</label><br>
+                    <label><input type="checkbox"> Samsung</label><br>
+                    <label><input type="checkbox"> Xiaomi</label><br>
+                    <label><input type="checkbox"> OPPO</label>
+                </div>
+                <div class="filter-group">
+                    <h4>Mức giá</h4>
+                    <label><input type="checkbox"> Dưới 10 triệu</label><br>
+                    <label><input type="checkbox" checked> 10 - 20 triệu</label><br>
+                    <label><input type="checkbox"> Trên 20 triệu</label>
+                </div>
+            </aside>
+
+            <!-- MAIN CONTENT -->
+            <main class="main-content">
+                <h2>Sản phẩm khuyến nghị (8)</h2>
+                
+                <div class="products-grid">
+                    <!-- Product Card 1 -->
+                    <div class="product-card">
+                        <img src="https://picsum.photos/300/200?random=1" alt="iPhone">
+                        <div class="info">
+                            <h3>iPhone 16 Pro</h3>
+                            <p class="price">28.990.000 ₫</p>
+                        </div>
+                        <button class="buy-btn">Thêm vào giỏ</button>
+                    </div>
+
+                    <!-- Product Card 2 -->
+                    <div class="product-card">
+                        <img src="https://picsum.photos/300/200?random=2" alt="MacBook">
+                        <div class="info">
+                            <h3>MacBook Air M3</h3>
+                            <p class="price">32.990.000 ₫</p>
+                        </div>
+                        <button class="buy-btn">Thêm vào giỏ</button>
+                    </div>
+
+                    <!-- Product Card 3 -->
+                    <div class="product-card">
+                        <img src="https://picsum.photos/300/200?random=3" alt="Samsung">
+                        <div class="info">
+                            <h3>Samsung Galaxy S24 Ultra</h3>
+                            <p class="price">26.490.000 ₫</p>
+                        </div>
+                        <button class="buy-btn">Thêm vào giỏ</button>
+                    </div>
+
+                    <!-- Product Card 4 -->
+                    <div class="product-card">
+                        <img src="https://picsum.photos/300/200?random=4" alt="Airpods">
+                        <div class="info">
+                            <h3>AirPods Pro 2</h3>
+                            <p class="price">5.990.000 ₫</p>
+                        </div>
+                        <button class="buy-btn">Thêm vào giỏ</button>
+                    </div>
+
+                    <!-- Product Card 5 -->
+                    <div class="product-card">
+                        <img src="https://picsum.photos/300/200?random=5" alt="Watch">
+                        <div class="info">
+                            <h3>Apple Watch Ultra 2</h3>
+                            <p class="price">18.990.000 ₫</p>
+                        </div>
+                        <button class="buy-btn">Thêm vào giỏ</button>
+                    </div>
+
+                    <!-- Product Card 6 -->
+                    <div class="product-card">
+                        <img src="https://picsum.photos/300/200?random=6" alt="iPad">
+                        <div class="info">
+                            <h3>iPad Pro M4 11"</h3>
+                            <p class="price">24.990.000 ₫</p>
+                        </div>
+                        <button class="buy-btn">Thêm vào giỏ</button>
+                    </div>
+
+                    <!-- Product Card 7 -->
+                    <div class="product-card">
+                        <img src="https://picsum.photos/300/200?random=7" alt="Sony">
+                        <div class="info">
+                            <h3>Sony WH-1000XM5</h3>
+                            <p class="price">7.490.000 ₫</p>
+                        </div>
+                        <button class="buy-btn">Thêm vào giỏ</button>
+                    </div>
+
+                    <!-- Product Card 8 -->
+                    <div class="product-card">
+                        <img src="https://picsum.photos/300/200?random=8" alt="Galaxy">
+                        <div class="info">
+                            <h3>Galaxy Buds 3 Pro</h3>
+                            <p class="price">4.490.000 ₫</p>
+                        </div>
+                        <button class="buy-btn">Thêm vào giỏ</button>
+                    </div>
+                </div>
+            </main>
+
+            <!-- ADS -->
+            <aside class="ads">
+                <div class="ad-banner">
+                    <img src="https://picsum.photos/300/600?random=20" alt="Ads">
+                    <div class="ad-text">
+                        <strong>GIẢM NGAY 5 TRIỆU</strong>
+                        <p>Cho đơn hàng đầu tiên từ 10 triệu</p>
+                        <button class="ad-cta">Nhận ưu đãi</button>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2026 SHOPVN - Cửa hàng điện thoại &amp; laptop chính hãng</p>
+                <p>Hotline: 1900 1234 | Email: support@shopvn.vn</p>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>

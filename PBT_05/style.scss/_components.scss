@@ -1,0 +1,25 @@
+.card {
+  background: white;
+
+  padding: $spacing-md;
+
+  border-radius: 10px;
+
+  @include card-shadow;
+
+  .card-image {
+    width: 100%;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  &.featured {
+    border: 2px solid orange;
+  }
+}

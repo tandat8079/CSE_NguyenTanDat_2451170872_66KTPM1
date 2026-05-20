@@ -1,0 +1,14 @@
+@import "variables";
+@import "mixins";
+@import "components";
+
+body {
+  font-family: $font-primary;
+  background: $secondary-color;
+}
+
+.container {
+  @include flex-center;
+
+  padding: $spacing-lg;
+}

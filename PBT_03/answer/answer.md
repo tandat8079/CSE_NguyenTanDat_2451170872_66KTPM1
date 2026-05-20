@@ -24,7 +24,6 @@ cách 3: External CSS
 - ưu điểm: tách biệt hoàn toàn html và css, tái sử dụng được cho nhiều trang, dễ bảo trì, dễ sử dụng
 - nhược điểm: phải có thêm một request http, quản lý link đúng đường dẫn
 - nên dùng: khi có hầu hết các dự án thực tế, nhiều trang, 
-
 # câu A2
 1.> h1
 Chọn: ShopTLU
