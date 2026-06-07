@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="dashboard">
+    <header>
+      <h1>Multi-API Dashboard</h1>
+      <button id="refreshBtn">Refresh All</button>
+    </header>
+    <div class="meta">Loaded in <span id="loadTime">0</span> ms</div>
+    <div class="widgets">
+      <div class="widget" id="userWidget">
+        <h2>Random Users</h2>
+        <div class="widget-body" id="userBody"></div>
+      </div>
+      <div class="widget" id="dogWidget">
+        <h2>Dog Photos</h2>
+        <div class="widget-body" id="dogBody"></div>
+      </div>
+      <div class="widget" id="countryWidget">
+        <h2>Country Info</h2>
+        <div class="widget-body" id="countryBody"></div>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

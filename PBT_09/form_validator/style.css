@@ -1,0 +1,99 @@
+:root {
+  --bg: #eff6ff;
+  --surface: #ffffff;
+  --text: #111827;
+  --border: #cbd5e1;
+  --success: #16a34a;
+  --warning: #f59e0b;
+  --danger: #dc2626;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Inter, system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: min(520px, 100%);
+  padding: 28px;
+  border-radius: 24px;
+  background: var(--surface);
+  box-shadow: 0 24px 80px rgba(15, 23, 42, 0.12);
+}
+
+h1 {
+  margin-top: 0;
+}
+
+form {
+  display: grid;
+  gap: 16px;
+}
+
+label {
+  display: grid;
+  gap: 8px;
+  font-weight: 600;
+}
+
+input {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 14px 16px;
+  font-size: 1rem;
+}
+
+.message {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.meter {
+  height: 10px;
+  border-radius: 999px;
+  background: #e2e8f0;
+  overflow: hidden;
+}
+
+.meter > div {
+  height: 100%;
+  width: 0;
+  transition: width 0.2s ease, background 0.2s ease;
+}
+
+button {
+  border: none;
+  border-radius: 999px;
+  padding: 14px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  background: #4338ca;
+  color: white;
+}
+
+button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.alert {
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: 18px;
+  background: #dcfce7;
+  color: #166534;
+}
+
+.hidden {
+  display: none;
+}

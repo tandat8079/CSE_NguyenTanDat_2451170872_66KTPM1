@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infinite Scroll Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>Gallery</h1>
+      <div id="loadingState">Loading images...</div>
+    </header>
+    <div id="galleryGrid" class="gallery"></div>
+    <div id="loadTrigger" class="trigger">Loading more...</div>
+    <div class="modal hidden" id="modal">
+      <div class="modal-content">
+        <button id="closeModal">×</button>
+        <img id="modalImage" alt="Photo">
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

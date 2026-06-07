@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Catalog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>Product Catalog</h1>
+      <div class="controls">
+        <input id="searchInput" type="search" placeholder="Search products...">
+        <button id="darkModeToggle">Dark mode</button>
+      </div>
+    </header>
+    <section class="filters">
+      <div class="categories" id="categoryFilters"></div>
+      <select id="sortSelect">
+        <option value="price-asc">Giá tăng</option>
+        <option value="price-desc">Giá giảm</option>
+        <option value="name-asc">Tên A-Z</option>
+        <option value="rating-desc">Đánh giá cao nhất</option>
+      </select>
+    </section>
+    <div class="status-bar">
+      <span id="cartBadge">🛒 0</span>
+    </div>
+    <main id="productGrid" class="grid"></main>
+  </div>
+  <div class="modal hidden" id="productModal">
+    <div class="modal-content">
+      <button class="close" id="closeModal">×</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

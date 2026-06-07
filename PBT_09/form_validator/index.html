@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Đăng ký</h1>
+    <form id="signupForm" novalidate>
+      <label>
+        Tên
+        <input id="nameField" type="text" placeholder="Nhập tên" autocomplete="off">
+        <span class="message" id="nameMessage"></span>
+      </label>
+      <label>
+        Email
+        <input id="emailField" type="email" placeholder="email@example.com" autocomplete="off">
+        <span class="message" id="emailMessage"></span>
+      </label>
+      <label>
+        Mật khẩu
+        <input id="passwordField" type="password" placeholder="Tối thiểu 8 ký tự">
+        <span class="message" id="passwordMessage"></span>
+      </label>
+      <div class="meter">
+        <div id="strengthBar"></div>
+      </div>
+      <label>
+        Xác nhận mật khẩu
+        <input id="confirmField" type="password" placeholder="Nhập lại mật khẩu">
+        <span class="message" id="confirmMessage"></span>
+      </label>
+      <label>
+        Số điện thoại
+        <input id="phoneField" type="tel" placeholder="0901-234-567" maxlength="13">
+        <span class="message" id="phoneMessage"></span>
+      </label>
+      <button id="submitBtn" type="submit" disabled>Đăng ký</button>
+    </form>
+    <div class="alert hidden" id="successAlert">Đăng ký thành công!</div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

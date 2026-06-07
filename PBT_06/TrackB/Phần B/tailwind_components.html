@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tailwind Components</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-8 bg-gray-50 space-y-8">
+    <div class="space-x-4">
+        <button class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded focus:ring-2">Primary</button>
+        <button class="px-4 py-2 border border-gray-300 hover:bg-gray-100 rounded focus:ring-2">Outline</button>
+        <button class="px-4 py-2 bg-gray-300 text-gray-500 cursor-not-allowed rounded" disabled>Disabled</button>
+    </div>
+
+    <div class="max-w-md space-y-4">
+        <div>
+            <label class="block text-sm font-medium mb-1">Email</label>
+            <input type="email" class="w-full border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
+        <div>
+            <label class="flex items-center space-x-2">
+                <input type="checkbox" class="rounded text-blue-500 focus:ring-blue-500">
+                <span>Accept Terms</span>
+            </label>
+        </div>
+    </div>
+
+    <div class="flex justify-between items-center bg-green-100 text-green-700 p-4 rounded-lg border border-green-200">
+        <span>Operation successful!</span>
+        <button class="hover:text-green-900 font-bold">&times;</button>
+    </div>
+</body>
+</html>
