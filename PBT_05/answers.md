@@ -1,5 +1,4 @@
-# PHẦN A — KIỂM TRA ĐỌC HIỂU (20 điểm)
-
+# PHẦN A — 
 ## Câu A1 (5đ) — Viewport & Mobile-First
 
 1. Viết chính xác thẻ `<meta viewport>` chuẩn. Giải thích từng thuộc tính.
@@ -414,4 +413,4 @@ Bạn được giao thiết kế trang **Đặt bàn nhà hàng** responsive. Tr
 
 Viết CSS skeleton (chỉ layout, không cần chi tiết) dùng Grid + Media Queries Mobile-First.
 
-## 🎬 PHẦN D — VIDEO THỰC HÀNH OBS (25 điểm)
+
